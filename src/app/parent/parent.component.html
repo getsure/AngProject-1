@@ -1,0 +1,3 @@
+<h2>ParentComponent -{{pAmount}}</h2>
+<hr/>
+<app-child [cAmount] = "pAmount" (notify)="updatedParentAmount($event)"></app-child>

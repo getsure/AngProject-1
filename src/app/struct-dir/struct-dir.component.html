@@ -1,0 +1,22 @@
+<div>First Element</div>
+<div *ngIf="isShowElement">Second Element</div>
+<div>Third Eleement</div>
+
+
+<div [ngSwitch]="course">
+    <p *ngSwitchCase="'java'">Java Course</p>
+    <p *ngSwitchCase="'dotnet'">.NET Course</p>
+    <p *ngSwitchCase="'angular'">Angular course</p>
+    <p *ngSwitchDefault>Python</p>
+</div>
+
+<ul *ngFor="let name of names">
+    <li>{{name}}</li>
+</ul>
+
+<!-- <ul *ngFor="let employee of employees">
+    <li>{{employee.empId}}-{{employee.empName}}-{{employee.empSal}}</li>
+</ul> -->
+
+{{employees | json}}
+
